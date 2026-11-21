@@ -9,8 +9,7 @@ Independent browser-based web viewer for the **AULA (TU Delft)** and **Herdenkin
 - **1 / 2 / 3:** SPC / HBIM / S3DGS. Orbit by dragging and zoom with the mouse wheel.
 - **Q / W / E / R:** original colors / segmentation colors / material / structure (where attributes are available).
 - Click surfaces or the patch list to inspect available attributes; use **Show only this patch** to isolate a segment.
-- For AULA, the currently confirmed explicit SPC–S3DGS patch matches include **Roof #01 ↔ #01** and **Ground #41 ↔ #73 / #75 / #76**; other correspondences may still be pending.
-- English / 简体中文 interface is available.
+
 
 ## Data scope and caveats
 
@@ -19,7 +18,7 @@ Independent browser-based web viewer for the **AULA (TU Delft)** and **Herdenkin
 | HK / Monument | 584,320 RGB points; 12 patches | IFC-derived geometry, 5 material groups | 12 segmented splat patches, 1,332,333 Gaussians |
 | AULA | 1,349,997 sampled RGB points, 42 labeled patches plus unclassified points | Colored AULA/library mesh, 14 material groups | 85 numbered patches, 2,100,002 sampled Gaussians |
 
-These are optimized browser-preview assets, **not the complete raw survey outputs**. In particular, AULA uses the original Unity project's approximate registration; only reviewed correspondences should be treated as confirmed. See the packaged viewer interface and model metadata for further detail.
+These are optimized browser-preview assets. In particular, AULA uses the original Unity project's approximate registration; only reviewed correspondences should be treated as confirmed. See the packaged viewer interface and model metadata for further detail.
 
 ## Project structure
 
