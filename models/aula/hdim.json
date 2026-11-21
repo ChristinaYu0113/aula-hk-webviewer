@@ -1,0 +1,158 @@
+{
+  "file": "bim.glb",
+  "bounds": [
+    [
+      -86.45487,
+      -1.96287,
+      -113.3285
+    ],
+    [
+      216.21307,
+      43.96896,
+      72.0264
+    ]
+  ],
+  "count": 428567,
+  "parts": [
+    {
+      "id": 1,
+      "name": "混凝土",
+      "nameEn": "Concrete",
+      "material": "混凝土",
+      "materialEn": "Concrete",
+      "structure": "主体",
+      "structureEn": "Main structure",
+      "count": 5841
+    },
+    {
+      "id": 2,
+      "name": "楼面",
+      "nameEn": "Floor finish",
+      "material": "楼面",
+      "materialEn": "Floor finish",
+      "structure": "楼板",
+      "structureEn": "Floor",
+      "count": 12
+    },
+    {
+      "id": 3,
+      "name": "松木",
+      "nameEn": "Pine",
+      "material": "松木",
+      "materialEn": "Pine",
+      "structure": "饰面",
+      "structureEn": "Finish",
+      "count": 10050
+    },
+    {
+      "id": 4,
+      "name": "玻璃",
+      "nameEn": "Glazing",
+      "material": "玻璃",
+      "materialEn": "Glazing",
+      "structure": "幕墙",
+      "structureEn": "Curtain wall",
+      "count": 66137
+    },
+    {
+      "id": 5,
+      "name": "白色外墙",
+      "nameEn": "White façade",
+      "material": "白色外墙",
+      "materialEn": "White façade",
+      "structure": "外墙",
+      "structureEn": "Façade",
+      "count": 94109
+    },
+    {
+      "id": 6,
+      "name": "建筑主体",
+      "nameEn": "Building mass",
+      "material": "建筑主体",
+      "materialEn": "Building mass",
+      "structure": "主体",
+      "structureEn": "Main structure",
+      "count": 971
+    },
+    {
+      "id": 7,
+      "name": "窗框",
+      "nameEn": "Window frame",
+      "material": "窗框",
+      "materialEn": "Window frame",
+      "structure": "门窗",
+      "structureEn": "Openings",
+      "count": 80788
+    },
+    {
+      "id": 8,
+      "name": "折板屋顶",
+      "nameEn": "Folded roof",
+      "material": "折板屋顶",
+      "materialEn": "Folded roof",
+      "structure": "屋顶",
+      "structureEn": "Roof",
+      "count": 17656
+    },
+    {
+      "id": 9,
+      "name": "金属构件",
+      "nameEn": "Metalwork",
+      "material": "金属构件",
+      "materialEn": "Metalwork",
+      "structure": "构件",
+      "structureEn": "Building elements",
+      "count": 149714
+    },
+    {
+      "id": 10,
+      "name": "草地",
+      "nameEn": "Grass",
+      "material": "草地",
+      "materialEn": "Grass",
+      "structure": "地面",
+      "structureEn": "Ground",
+      "count": 2735
+    },
+    {
+      "id": 11,
+      "name": "石材",
+      "nameEn": "Stone",
+      "material": "石材",
+      "materialEn": "Stone",
+      "structure": "铺装",
+      "structureEn": "Paving",
+      "count": 60
+    },
+    {
+      "id": 12,
+      "name": "步道",
+      "nameEn": "Walkway",
+      "material": "步道",
+      "materialEn": "Walkway",
+      "structure": "步道",
+      "structureEn": "Walkway",
+      "count": 400
+    },
+    {
+      "id": 13,
+      "name": "卵石",
+      "nameEn": "Pebbles",
+      "material": "卵石",
+      "materialEn": "Pebbles",
+      "structure": "铺装",
+      "structureEn": "Paving",
+      "count": 58
+    },
+    {
+      "id": 14,
+      "name": "青石",
+      "nameEn": "Bluestone",
+      "material": "青石",
+      "materialEn": "Bluestone",
+      "structure": "铺装",
+      "structureEn": "Paving",
+      "count": 36
+    }
+  ]
+}

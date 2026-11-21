@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the AULA and Monument point clouds, building models, and segmented Gaussian splats.">
+  <title>3D Building Viewer</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <h1 data-copy="title">3D Building Viewer</h1>
+    </div>
+    <div class="select-wrap language-control">
+      <select id="language" aria-label="Language" data-copy-aria="language" autocomplete="off">
+        <option value="en" lang="en">English</option>
+        <option value="zh-CN" lang="zh-CN">简体中文</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section id="viewport" aria-label="3D viewport" data-copy-aria="viewport" aria-busy="true">
+      <canvas id="view" aria-label="Drag to orbit, scroll to zoom, or click to select a patch" data-copy-aria="canvas"></canvas>
+      <span id="pin" class="pin" aria-hidden="true" hidden></span>
+
+      <div class="scene-control">
+        <label for="scene" data-copy="scene">Scene</label>
+        <div class="select-wrap">
+          <select id="scene">
+            <option value="monument" data-copy="monument">Monument</option>
+            <option value="aula" data-copy="aula">AULA · TU Delft</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="notice" class="notice" role="status">
+        <strong id="notice-text">Loading S3DGS</strong>
+        <progress id="load-progress" aria-label="Model loading progress" data-copy-aria="progress"></progress>
+        <button id="retry" type="button" data-copy="retry" hidden>Try again</button>
+      </div>
+
+      <div class="view-bottom">
+        <div class="mode-switch" role="group" aria-label="Model mode" data-copy-aria="modes">
+          <button type="button" data-mode="spc" aria-pressed="false" aria-keyshortcuts="1" data-copy-title="spc" title="Color point cloud"><kbd aria-hidden="true">1</kbd>SPC</button>
+          <button type="button" data-mode="hdim" aria-pressed="false" aria-keyshortcuts="2" data-copy-title="hdim" title="Building information model (HBIM)"><kbd aria-hidden="true">2</kbd>HBIM</button>
+          <button type="button" data-mode="s3dgs" aria-pressed="true" aria-keyshortcuts="3" data-copy-title="s3dgs" title="Segmented Gaussian splats"><kbd aria-hidden="true">3</kbd>S3DGS</button>
+        </div>
+        <div class="color-switch" role="group" aria-label="Patch coloring" data-copy-aria="colors">
+          <button type="button" data-color="original" aria-keyshortcuts="Q" aria-pressed="true"><kbd aria-hidden="true">Q</kbd><span data-copy="original">Original</span></button>
+          <button type="button" data-color="patch" aria-keyshortcuts="W" aria-pressed="false"><kbd aria-hidden="true">W</kbd><span data-copy="patch">Segmentation colors</span></button>
+          <button type="button" data-color="material" aria-keyshortcuts="E" aria-pressed="false"><kbd aria-hidden="true">E</kbd><span data-copy="materialColor">By material</span></button>
+          <button type="button" data-color="structure" aria-keyshortcuts="R" aria-pressed="false"><kbd aria-hidden="true">R</kbd><span data-copy="structureColor">By structure</span></button>
+        </div>
+        <button type="button" id="reset" class="reset" data-copy="reset" aria-keyshortcuts="Home">Reset view</button>
+      </div>
+    </section>
+
+    <aside class="parts-panel" aria-labelledby="parts-heading">
+      <div class="panel-head">
+        <div class="panel-title">
+          <h2 id="parts-heading" data-copy="patches">Patches</h2>
+          <span id="part-count" class="count" aria-label="Patch count" data-copy-aria="patchCount">—</span>
+        </div>
+        <p id="scene-file" class="scene-file">GSTestScene_gs_seg.unity</p>
+      </div>
+      <section id="linked-panel" class="linked-panel" aria-labelledby="linked-heading" hidden>
+        <h3 id="linked-heading" data-copy="linkedComponents">Linked components</h3>
+        <div id="linked-buttons" class="linked-buttons"></div>
+      </section>
+      <label id="filter-field" class="filter" hidden>
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="filter" type="search" placeholder="Search by name or ID" aria-label="Filter patches" data-copy-aria="filter" data-copy-placeholder="filterHint">
+      </label>
+      <div id="parts" class="parts" aria-label="Patch list" data-copy-aria="patchList"></div>
+      <section id="part-detail" class="part-detail" aria-label="Selected patch" data-copy-aria="selected" hidden>
+        <div class="detail-head">
+          <div class="detail-name">
+            <span id="part-swatch" class="swatch" aria-hidden="true" hidden></span>
+            <h3 id="part-name"></h3>
+          </div>
+          <button id="clear" class="icon-button" type="button" aria-label="Clear selection" title="Clear selection" data-copy-aria="clear" data-copy-title="clear">×</button>
+        </div>
+        <dl id="part-fields"></dl>
+        <button id="isolate" type="button" aria-pressed="false">Show only this patch</button>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="statusbar">
+    <div id="model-status" role="status"></div>
+    <div class="gesture-hints">
+      <span><b data-copy="drag">Drag</b> <span data-copy="orbit">orbit</span></span>
+      <span><b data-copy="scroll">Scroll</b> <span data-copy="zoom">zoom</span></span>
+      <span><b data-copy="click">Click</b> <span data-copy="select">select a patch</span></span>
+    </div>
+  </footer>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

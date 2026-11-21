@@ -1,0 +1,21 @@
+{
+  "name": "aula-monument-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "start:lan": "node server.mjs --lan",
+    "build": "node scripts/build.mjs",
+    "prepare:assets": "python scripts/prepare-models.py",
+    "package:windows": "python scripts/package-windows.py"
+  },
+  "dependencies": {
+    "@sparkjsdev/spark": "2.4.0",
+    "three": "0.182.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

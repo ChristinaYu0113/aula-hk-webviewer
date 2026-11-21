@@ -1,0 +1,68 @@
+{
+  "file": "bim.glb",
+  "bounds": [
+    [
+      -0.28282,
+      -3.0862,
+      -0.84893
+    ],
+    [
+      1.60834,
+      -0.50986,
+      0.3806
+    ]
+  ],
+  "count": 14062,
+  "parts": [
+    {
+      "id": 1,
+      "name": "红砖",
+      "nameEn": "Red brick",
+      "material": "砖石",
+      "materialEn": "Brick",
+      "structure": "碑体",
+      "structureEn": "Monument body",
+      "count": 4968
+    },
+    {
+      "id": 2,
+      "name": "红褐色铭牌",
+      "nameEn": "Red-brown plaque",
+      "material": "金属",
+      "materialEn": "Metal",
+      "structure": "铭牌",
+      "structureEn": "Plaque",
+      "count": 24
+    },
+    {
+      "id": 3,
+      "name": "浅色饰面",
+      "nameEn": "Light finish",
+      "material": "浅色饰面",
+      "materialEn": "Light finish",
+      "structure": "铭牌",
+      "structureEn": "Plaque",
+      "count": 200
+    },
+    {
+      "id": 4,
+      "name": "灰白饰面",
+      "nameEn": "Gray-white finish",
+      "material": "灰白饰面",
+      "materialEn": "Gray-white finish",
+      "structure": "碑体",
+      "structureEn": "Monument body",
+      "count": 5038
+    },
+    {
+      "id": 5,
+      "name": "深色铭文",
+      "nameEn": "Dark lettering",
+      "material": "深色饰面",
+      "materialEn": "Dark finish",
+      "structure": "铭文",
+      "structureEn": "Inscription",
+      "count": 3832
+    }
+  ]
+}
