@@ -2,21 +2,6 @@
 
 Independent browser-based web viewer for the **AULA (TU Delft)** and **Herdenkingsmonument Kartuizerklooster (HK)** case studies. It shows sampled/processed SPC point clouds, HBIM-derived models, and segmented 3D Gaussian Splatting (S3DGS), with interactive patch inspection and cross-format links where verified.
 
-This is a **separate web project**, not the `smart-3dgs-vr` Unity/VR repository.
-
-## Live site (after publishing)
-
-https://ChristinaYu0113.github.io/aula-hk-webviewer/
-
-## Publish with GitHub Pages
-
-1. Create a new **public** GitHub repository named `aula-hk-webviewer`.
-2. Commit and push **all files in this folder into the repository root**, including `index.html`, `viewer.js`, `models/`, and `.nojekyll`. Do not upload this ZIP as a single file.
-3. In the new repository, go to **Settings → Pages → Build and deployment**.
-4. Set **Source: Deploy from a branch**, **Branch: main**, **Folder: /(root)** and **Save**.
-5. After Pages finishes publishing, open the live-site URL above.
-
-**Note:** The original project included a local Windows Node.js runtime, which is not required for a static GitHub Pages site and is intentionally omitted here. GitHub Pages serves the static viewer; it does not execute `server.mjs`.
 
 ## Viewer controls
 
